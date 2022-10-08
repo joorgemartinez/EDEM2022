@@ -4,10 +4,7 @@
 
 
 
-[![EDEM](https://www.gepacv.org/wp-content/uploads/2017/01/EDEM-Logo-.png)](https://edem.eu/master-big-data-analytics/)
-
-
-<img src="https://www.gepacv.org/wp-content/uploads/2017/01/EDEM-Logo-.png"  width="600" height="300">
+<img src="https://www.gepacv.org/wp-content/uploads/2017/01/EDEM-Logo-.png"  width="300" height="150">
 
 Bienvenido al 
 
