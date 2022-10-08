@@ -8,5 +8,5 @@
 
 Bienvenido al repositorio del Master en Data Analytics de Jorge Martínez.
 
-<a href="https://linkedin.com/in/jorgemartínezca"> <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"  width="80" height="80">
+<a href="https://linkedin.com/in/jorgemartínezca"> <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"  width="60" height="60">
 
