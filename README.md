@@ -9,4 +9,4 @@
 Bienvenido al repositorio del Master en _Data Analytics_ de Jorge Martínez.
 
 
-Conecta conmigo pulsando el icono de LinkedIn!  <a href="https://linkedin.com/in/jorgemartínezca"> <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"  width="60" height="60">
+Conecta conmigo pulsando el icono de LinkedIn!  <a href="https://linkedin.com/in/jorgemartínezca"> <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"  width="10" height="10">
