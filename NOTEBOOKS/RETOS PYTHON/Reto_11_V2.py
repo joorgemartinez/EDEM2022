@@ -37,6 +37,22 @@ while opcion_elegida != 6:
 
     if opcion_elegida == 2:
         nif = input("Introduzca el NIF del cliente que desea borrar: ")
+        if nif in clientes:
+            del clientes[nif]
+        else:
+            print (f"Lo siento, no existe ningún cliente con el NIF: {nif}")
+
+    if opcion_elegida == 3:
+        nif = input("Introduzca el NIF del cliente que desea borrar: ")
+        if nif in clientes:
+            print(clientes[nif])
+        else:
+             print (f"Lo siento, no existe ningún cliente con el NIF: {nif}")
+
+
+
+
+    opcion_elegida = int(input("Elija otra de las opciones del menú:"))
 
     
 
