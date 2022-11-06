@@ -16,22 +16,22 @@ class Cliente():
   email:str
   preferente:bool
 
-    def __init__(self, nombre, apellidos, nif, telefono, email, preferente):
+  def __init__(self, nombre, apellidos, nif, telefono, email, preferente):
     
-        self.nombre = nombre
-        self.apellidos = apellidos
-        self.nif = nif
-        self.telefono = telefono
-        self.email = email
-        self.preferente = preferente
+      self.nombre = nombre
+      self.apellidos = apellidos
+      self.nif = nif
+      self.telefono = telefono
+      self.email = email
+      self.preferente = preferente
     
-    clientes = []
+  clientes = []
 
-    def add (self, nombre, apellidos, nif, telefono, email, preferente):
-        self.nombre = input("Añade el nombre del cliente: ")
-        self.apellidos = input("Añade los apellidos del cliente: ")
-        self.nif = input("Añade el NIF del cliente: ")
-        self.telefono = input("Añade el teléfono del cliente: ")
-        self.email = input("Añade el email del cliente: ")
-        self.preferente = input("Escribe True si es un cliente preferente o False si no lo es: ")
+  def add (self, nombre, apellidos, nif, telefono, email, preferente):
+      self.nombre = input("Añade el nombre del cliente: ")
+      self.apellidos = input("Añade los apellidos del cliente: ")
+      self.nif = input("Añade el NIF del cliente: ")
+      self.telefono = input("Añade el teléfono del cliente: ")
+      self.email = input("Añade el email del cliente: ")
+      self.preferente = input("Escribe True si es un cliente preferente o False si no lo es: ")
         
