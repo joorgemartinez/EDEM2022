@@ -8,7 +8,10 @@
 #(5) Mostrar ÚNICAMENTE los clientes preferentes
 #(6) Finalizar Programa
 
+import csv
+
 clientes = {}
+
 
 print('''#(1) Añadir un cliente
 #(2) Eliminar cliente por NIF
@@ -35,6 +38,11 @@ while opcion_elegida != 6:
         #Actualizamos el diccionario utilizando como clave el NIF y como valor el diccionario con sus datos.
         clientes[nif] = cliente
 
+        with open('dct.csv', 'w') as f:  
+            writer = csv.writer(f)
+            for k, v in clientes.items():
+                writer.writerow([k, v])
+
     if opcion_elegida == 2:
         nif = input("Introduzca el NIF del cliente que desea borrar: ")
         if nif in clientes:
@@ -49,13 +57,26 @@ while opcion_elegida != 6:
         else:
              print (f"Lo siento, no existe ningún cliente con el NIF: {nif}")
 
+    if opcion_elegida == 4:
+        print (clientes)
+
+
+    #if opcion_elegida == 5:
+        #for key, value in clientes:
+            #if value['Preferente']:
+                #print(key, value['Nombre'])
+
+    
+
+
+
 
 
 
     opcion_elegida = int(input("Elija otra de las opciones del menú:"))
 
+print ("Programa Finalizado")
     
-
 
 
 
