@@ -66,12 +66,6 @@ while opcion_elegida != 6:
             #if value['Preferente']:
                 #print(key, value['Nombre'])
 
-    
-
-
-
-
-
 
     opcion_elegida = int(input("Elija otra de las opciones del menú:"))
 
