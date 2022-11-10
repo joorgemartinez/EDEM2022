@@ -88,7 +88,7 @@ while opcion_elegida != '6':
 
     if opcion_elegida == '5':
         for value in clientes.items():
-            if value["Preferente"] == "True":
+            if value["Preferente"] == "True": #Error
                 clientes_preferentes = clientes
                 print(clientes_preferentes)
                 
