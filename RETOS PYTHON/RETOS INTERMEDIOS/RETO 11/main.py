@@ -9,19 +9,10 @@
 #(6) Finalizar Programa
 
 import csv
-import errno
 
 clientes = {}
 
-
-print('''#(1) Añadir un cliente
-#(2) Eliminar cliente por NIF
-#(3) Mostrar Cliente por NIF
-#(4) Listar TODOS os clientes
-#(5) Mostrar ÚNICAMENTE los clientes preferentes
-#(6) Finalizar Programa''')
-
-opcion_elegida = input("Elija una de las opciones mostradas:")
+opcion_elegida = input('(1) Añadir un cliente \n(2) Eliminar cliente \n(3) Mostrar Cliente \n(4) Listar TODOS los clientes \n(5) Mostrar ÚNICAMENTE los clientes preferentes \n(6) Finalizar Programa \nElija una de las opciones mostradas:')
 
 while opcion_elegida != '6':
 
@@ -75,32 +66,61 @@ while opcion_elegida != '6':
         else:
             print (f"Lo siento, no existe ningún cliente con el NIF: {nif}")
 
+    #Si elige la opción 3, podemos mostrar los datos de un cliente en concreto, utilizando la clave de su NIF.
     if opcion_elegida == '3':
         nif = input("Introduzca el NIF del cliente que desea mostrar: ")
+        #Mediante una condición if, si el NIF es correcto, imprimiremos en un comentario multilínea los datos de ese cliente.
         if nif in clientes:
-            print(clientes[nif])
+
+            print (f'''El cliente con NIF {nif} tiene los siguientes datos:
+Nombre: {clientes[nif]['Nombre']} 
+Apellidos: {clientes[nif]['Apellidos']}
+Teléfono: {clientes[nif]['Teléfono']}
+Email: {clientes[nif]['Email']}
+Cliente Preferente: {clientes[nif]['Preferente']}''')
+
+        #Si el NIF no corresponde a ningún cliente de nuestra base de datos, la consola devolverá un mensaje indicando que no existe.
         else:
              print(f"Lo siento, no existe ningún cliente con el NIF: {nif}")
 
+    #Si elige la opción 4, podemos mostrar los datos de todos los clientes de la base de datos.
     if opcion_elegida == '4':
-        print (clientes)
 
+        #Mediante un bucle for iteramos por todos los clientes y los mostramos mediante un comentario multilínea.
+        for key, value in clientes.items():
+            print (f'''El cliente con NIF {key} tiene los siguientes datos:
+Nombre: {value['Nombre']} 
+Apellidos: {value['Apellidos']}
+Teléfono: {value['Teléfono']}
+Email: {value['Email']}
+Cliente Preferente: {value['Preferente']}''')
+            print ('--------------------------------')
 
+    #Si elige la opción 5, podemos mostrar los datos de todos los clientes preferentes.
     if opcion_elegida == '5':
-        for value in clientes.items():
-            if value["Preferente"] == "True": #Error
-                clientes_preferentes = clientes
-                print(clientes_preferentes)
-                
-                
-                with open('clientes_VIP.csv', 'w') as f:  
-                    writer = csv.writer(f)
-                    for k,v in clientes_preferentes.items():
-                        writer.writerow([k, v])
-                
-                break
 
-    opcion_elegida = input("Elija otra de las opciones del menú:")
+        #Mediante un bucle for iteramos por todos los clientes.
+        for key, value in clientes.items():
+            #Mediante un condicional (if), indicamos que deben imprimirse por consola únicamente los clientes preferentes. 
+            if value['Preferente'] == True:
+                print(f'''El cliente con NIF {key} tiene los siguientes datos:
+Nombre: {value['Nombre']} 
+Apellidos: {value['Apellidos']}
+Teléfono: {value['Teléfono']}
+Email: {value['Email']}
+Cliente Preferente: {value['Preferente']}''')
+                print ('--------------------------------')
+                
+                
+                clientes_preferentes = clientes
+
+                with open('clientes_VIP.csv', 'w') as f: 
+                    writer = csv.writer(f)
+                    for k,v in clientes_preferentes.items():# Me guarda todos los clientes, no solo los que son preferentes
+                        writer.writerow([k, v])
+
+
+    opcion_elegida = input("(1) Añadir un cliente \n(2) Eliminar cliente \n(3) Mostrar Cliente \n(4) Listar TODOS los clientes \n(5) Mostrar ÚNICAMENTE los clientes preferentes \n(6) Finalizar Programa \nElija una de las opciones mostradas:")
 
 print ("Programa Finalizado")
     
