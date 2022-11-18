@@ -11,6 +11,7 @@
 import csv
 
 clientes = {}
+clientes_preferentes = {}
 
 opcion_elegida = input('(1) Añadir un cliente \n(2) Eliminar cliente \n(3) Mostrar Cliente \n(4) Listar TODOS los clientes \n(5) Mostrar ÚNICAMENTE los clientes preferentes \n(6) Finalizar Programa \nElija una de las opciones mostradas:')
 
@@ -112,11 +113,11 @@ Cliente Preferente: {value['Preferente']}''')
                 print ('--------------------------------')
                 
                 
-                clientes_preferentes = clientes
+        
 
                 with open('clientes_VIP.csv', 'w') as f: 
                     writer = csv.writer(f)
-                    for k,v in clientes_preferentes.items():# Me guarda todos los clientes, no solo los que son preferentes
+                    for k,v in clientes.items():# Me guarda todos los clientes, no solo los que son preferentes
                         writer.writerow([k, v])
 
 
