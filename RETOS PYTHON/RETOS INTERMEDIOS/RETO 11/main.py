@@ -48,7 +48,7 @@ while opcion_elegida != '6':
         clientes[nif] = cliente
 
         #Incluimos los datos de los clientes en un archivo.csv en el que la clave será el NIF y el valor cada diccionario.
-        with open('clientes.csv', 'w') as f:  
+        with open('/Users/jorgemartinezcanet/Documents/GitHub/EDEM2022/RETOS PYTHON/RETOS INTERMEDIOS/RETO 11/clientes.csv', 'w') as f:  
             writer = csv.writer(f)
             for k, v in clientes.items():
                 writer.writerow([k, v])
@@ -60,7 +60,7 @@ while opcion_elegida != '6':
             del clientes[nif]
 
             #Actualizamos el archivo .csv, retirando el cliente eliminado de la base de datos.
-            with open('clientes.csv', 'w') as f:  
+            with open('/Users/jorgemartinezcanet/Documents/GitHub/EDEM2022/RETOS PYTHON/RETOS INTERMEDIOS/RETO 11/clientes.csv', 'w') as f:  
                 writer = csv.writer(f)
                 for k, v in clientes.items():
                     writer.writerow([k, v])
@@ -111,15 +111,7 @@ Teléfono: {value['Teléfono']}
 Email: {value['Email']}
 Cliente Preferente: {value['Preferente']}''')
                 print ('--------------------------------')
-                
-                
-        
-
-                with open('clientes_VIP.csv', 'w') as f: 
-                    writer = csv.writer(f)
-                    for k,v in clientes.items():# Me guarda todos los clientes, no solo los que son preferentes
-                        writer.writerow([k, v])
-
+            
 
     opcion_elegida = input("(1) Añadir un cliente \n(2) Eliminar cliente \n(3) Mostrar Cliente \n(4) Listar TODOS los clientes \n(5) Mostrar ÚNICAMENTE los clientes preferentes \n(6) Finalizar Programa \nElija una de las opciones mostradas:")
 

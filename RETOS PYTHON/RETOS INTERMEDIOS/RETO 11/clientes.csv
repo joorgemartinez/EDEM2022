@@ -1,3 +1,2 @@
-1,"{'Nombre': 's', 'Apellidos': 's', 'Teléfono': 's', 'Email': 's', 'Preferente': True}"
-sdf,"{'Nombre': 'ds', 'Apellidos': 'a', 'Teléfono': 's', 'Email': 's', 'Preferente': True}"
-fmjd,"{'Nombre': 'dkd', 'Apellidos': '', 'Teléfono': 'd', 'Email': 'd', 'Preferente': False}"
+12345432,"{'Nombre': 'Jorge', 'Apellidos': 'Martinez', 'Teléfono': '574832', 'Email': 'hola@edem.es', 'Preferente': True}"
+75483920,"{'Nombre': 'Carlos', 'Apellidos': 'García', 'Teléfono': ""75849302'"", 'Email': 'carlitos@edem.es', 'Preferente': False}"

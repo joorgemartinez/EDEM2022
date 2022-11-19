@@ -63,28 +63,28 @@ hotel_california = {
 
 print(f'Los discos que puede elegir son los siguientes: \n1. {thriller["Nombre"]} de {thriller["Artista"]} \n2. {microdosis["Nombre"]} de {microdosis["Artista"]}  \n3. {filosofem["Nombre"]} de {filosofem["Artista"]} \n4. {computerwelt["Nombre"]} de {computerwelt["Artista"]} \n5. {ferxxo["Nombre"]} de {ferxxo["Artista"]} \n6. {hotel_california["Nombre"]} de {hotel_california["Artista"]}')
 
-disco = input ('¿Qué disco desea elegir? Indique el nombre: ')
+disco = input ('¿Qué disco desea elegir? Indique el número: ')
 
-if disco == "Thriller":
-    print("Buenísima elección!")
+if disco == "1":
     disco_elegido = thriller
-elif disco == 'Microdosis':
-    print("Buenísima elección!")
+    print(f"Buenísima elección! Ha elegido usted {disco_elegido['Nombre']} de {disco_elegido['Artista']} ")
+elif disco == '2':
     disco_elegido = microdosis
-elif disco == "Filosofem":
+    print(f"Buenísima elección! Ha elegido usted {disco_elegido['Nombre']} de {disco_elegido['Artista']} ")
+elif disco == "3":
     disco_elegido = filosofem
     filosofem.update({'Precio': 0.7*16})
-    print("Buenísima elección! Además, este disco tiene un 30% de descuento!")
-elif disco == "Computerwelt":
+    print(f"Buenísima elección! Ha elegido usted {disco_elegido['Nombre']} de {disco_elegido['Artista']} ")
+elif disco == "4":
     disco_elegido = computerwelt
     computerwelt.update({'Precio': 0.7*17})
-    print("Buenísima elección! Además, este disco tiene un 30% de descuento!")
-elif disco == 'Feliz Cumpleaños Ferxxo':
+    print(f"Buenísima elección! Ha elegido usted {disco_elegido['Nombre']} de {disco_elegido['Artista']} ")
+elif disco == '5':
     disco_elegido = ferxxo
-    print("Buenísima elección!")
-elif disco == 'Hotel California':
+    print(f"Buenísima elección! Ha elegido usted {disco_elegido['Nombre']} de {disco_elegido['Artista']} ")
+elif disco == '6':
     disco_elegido = hotel_california
-    print("Buenísima elección!")
+    print(f"Buenísima elección! Ha elegido usted {disco_elegido['Nombre']} de {disco_elegido['Artista']} ")
 else: 
     print ("Lo sentimos. Ha elegido un disco que no tenemos en stock")
     exit()
