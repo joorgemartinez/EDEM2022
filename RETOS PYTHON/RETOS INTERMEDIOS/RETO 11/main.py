@@ -48,7 +48,7 @@ while opcion_elegida != '6':
         clientes[nif] = cliente
 
         #Incluimos los datos de los clientes en un archivo.csv en el que la clave será el NIF y el valor cada diccionario.
-        with open('/Users/jorgemartinezcanet/Documents/GitHub/EDEM2022/RETOS PYTHON/RETOS INTERMEDIOS/RETO 11/clientes.csv', 'w') as f:  
+        with open('clientes.csv', 'w') as f:  #Habría que poner la ruta donde queremos guardar el .csv
             writer = csv.writer(f)
             for k, v in clientes.items():
                 writer.writerow([k, v])
@@ -60,7 +60,7 @@ while opcion_elegida != '6':
             del clientes[nif]
 
             #Actualizamos el archivo .csv, retirando el cliente eliminado de la base de datos.
-            with open('/Users/jorgemartinezcanet/Documents/GitHub/EDEM2022/RETOS PYTHON/RETOS INTERMEDIOS/RETO 11/clientes.csv', 'w') as f:  
+            with open('clientes.csv', 'w') as f:  #Habría que poner la ruta donde queremos guardar el .csv
                 writer = csv.writer(f)
                 for k, v in clientes.items():
                     writer.writerow([k, v])
