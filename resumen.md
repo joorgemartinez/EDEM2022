@@ -1,0 +1,3 @@
+
+
+Harry Potter vive con sus tíos y su primo Dudley, quienes lo tratan mal. Un día, recibe una carta misteriosa invitándolo a Hogwarts, una escuela de magia. Allí descubre que es un brujo, y es iniciado en el mundo mágico. Conoce a sus amigos Ron Weasley y Hermione Granger, y juntos se embarcan en aventuras y descubren misterios. Harry se enfrenta al malvado Lord Voldemort y a sus seguidores, los mortífagos. Luchan para salvar el mundo mágico y Harry se convierte en un héroe.
