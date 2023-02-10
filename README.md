@@ -1,5 +1,11 @@
 
 # Jorge Martínez
+<p align="left">
+   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
+   </p>
+
+
+
 ## _Master Data Analytics 2022_
 
 Bienvenido al repositorio del Máster en _Data Analytics_ de Jorge Martínez. En este espacio iré subiendo todos los ejercicios que realice. 
